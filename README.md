@@ -110,16 +110,20 @@ This project is not representing any of these companies/trademark owners, nor is
 
 - [Beaker](https://github.com/voxpupuli/beaker) - Tool to run acceptance acceptance tests using VMs.
    - [beaker-hiera](https://github.com/voxpupuli/beaker-hiera) - Allows to use Hiera data in Beaker tests.
-- [Hiera Data Manager](https://github.com/betadots/hdm) - Web interface to visualize/search Hiera data.
-   - [puppet-hdm](https://github.com/voxpupuli/puppet-hdm) - Puppet module to install/manage Hiera Data Manager.
 - [hiera-eyaml](https://github.com/voxpupuli/hiera-eyaml) - Hiera backend that allows to encrypt values in Hiera YAML files.
    - [hiera-eyaml-gpg](https://github.com/voxpupuli/hiera-eyaml-gpg) - Allows to use GPG encryption with hiera-eyaml.
-- [Puppetboard](https://github.com/voxpupuli/puppetboard) - Web interface for PuppetDB that aims to be the equivalent of [Puppet Enterprise console](https://www.puppet.com/docs/pe/latest/console_accessing.html) for Open Source Puppet.
-   - [puppet-puppetboard](https://github.com/voxpupuli/puppet-puppetboard) - Puppet module to install Puppetboard.
 - [Puppet Catalog Diff](https://github.com/voxpupuli/puppet-catalog_diff) - Tool to compare Puppet catalogs.
-- [Puppet Summary](https://github.com/skx/puppet-summary) - Web interface written in Go.
-   - [puppet-puppet_summary](https://github.com/voxpupuli/puppet-puppet_summary) - Puppet module to install/manage Puppet Summary.
 - [pypuppetdb](https://github.com/voxpupuli/pypuppetdb) - Python library to interact with the PuppetDB API.
+
+#### Web Interfaces
+
+- [Hiera Data Manager](https://github.com/betadots/hdm) - Web interface to visualize/search Hiera data.
+   - [puppet-hdm](https://github.com/voxpupuli/puppet-hdm) - Puppet module to install/manage Hiera Data Manager.
+- [OpenVox View](https://github.com/voxpupuli/openvoxview) - Web interface for OpenVoxDB, made as a single executable in Go.
+   - [puppet-openvoxview](https://github.com/voxpupuli/puppet-openvoxview) - Module to install OpenVox View.
+- [Pabawi](https://github.com/example42/pabawi) - Puppet/OpenVox/Bolt/PuppetDB/Hiera web frontend. 
+- [Puppetboard](https://github.com/voxpupuli/puppetboard) - Web interface for OpenVoxDB that aims to be the equivalent of [Puppet Enterprise console](https://www.puppet.com/docs/pe/latest/console_accessing.html), made in Python.
+   - [puppet-puppetboard](https://github.com/voxpupuli/puppet-puppetboard) - Module to install Puppetboard.
 
 ### Linters, Testers, Validators
 
