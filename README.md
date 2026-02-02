@@ -1,23 +1,25 @@
 # Awesome Puppet [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 An (opinionated) awesome list of resources about Puppet, a configuration
-management software.
+management software framework.
+
+Mainly focused on the FOSS OpenVox framework, after Puppet switch to EULA-only.
 
 It has been inspired by [rnelson0's list](https://github.com/rnelson0/awesome-puppet) and its forks, but it is not a fork of that list due to the lack of a license.
 
-**Disclaimer**: Puppet is a trademark of Puppet, Inc., Perforce Software, Inc. or an affiliate ([link](https://www.puppet.com/docs/puppet/8/copyright-trademark)).
+**Disclaimer**: Puppet is a trademark of Puppet, Inc., Perforce Software, Inc. or an affiliate ([link](https://help.puppet.com/core/8/Content/PuppetCore/copyright-trademark.htm)).
 All other trademarks mentioned in this project are property of their respective owners.
 This project is not representing any of these companies/trademark owners, nor is in any way endorsed by them.
 
 ## Contents <!-- omit in toc -->
 - [Books](#books)
-- [Forks](#forks)
+- [Distributions](#distributions)
 - [IDE tools](#ide-tools)
 - [Learning](#learning)
 - [Modules](#modules)
   - [Modules Development](#modules-development)
   - [Modules Management](#modules-management)
-- [Puppet Tools](#puppet-tools)
+- [Tools](#tools)
   - [Linters, Testers, Validators](#linters-testers-validators)
 
 ## Books
@@ -25,13 +27,32 @@ This project is not representing any of these companies/trademark owners, nor is
 - [Puppet 8 for DevOps Engineers](https://www.packtpub.com/en-us/product/puppet-8-for-devops-engineers-9781803231709) - Probably the most up-to-date book about Puppet, focusing on the use of Puppet 8.
 - [Puppet Best Practices](https://www.oreilly.com/library/view/puppet-best-practices/9781491922996/) - Written for Puppet 6, it's still a valid resource for Puppet 7/8 due to the focus on best practices and changes between these majors being mostly behind the scenes.
 
-## Forks
+## Distributions
+
+### Commercial
+
+- [Puppet](https://www.puppet.com) - Automation tools framework previously Open Core, now EULA-only.
+    - [Puppet Agent](https://help.puppet.com/core/8/Content/PuppetCore/Markdown/agent.htm) - Agent to be installed on the managed nodes.
+    - [Puppet Bolt](https://help.puppet.com/bolt/current/topics/bolt.htm) - Agent-less orchestration tool, to run tasks/scripts/commands on remote nodes through SSH or WinRM.
+    - [PuppetDB](https://help.puppet.com/core/8/Content/PuppetCore/puppetdb_overview.htm) - Database for agent run reports storage and analysis.
+    - [Puppet Server](https://help.puppet.com/core/8/Content/PuppetCore/server/puppet_server.htm) - Server to provide catalogs to the agents.
+
+### Community
+
+- [OpenVox Automation Framework](https://voxpupuli.org/openvox/) - A fork of the latest Open Source Puppet (OSP) version available.
+    - [OpenVox Agent](https://github.com/OpenVoxProject/openvox) - Fork of OSP Agent.
+    - [OpenVoxDB](https://github.com/OpenVoxProject/openvoxdb) - Fork of OSP DB.
+    - [OpenVox Server](https://github.com/OpenVoxProject/openvox-server) - Fork of OSP Server.
+    - [OpenBolt](https://github.com/OpenVoxProject/openbolt) - Fork of OSP Bolt.
+        - [puppet-bolt](https://github.com/voxpupuli/puppet-bolt) - Module to install/manage OpenBolt.
+
+### News
 
 - News
+    - [The Perforce EULA and impact on Vox Pupuli](https://voxpupuli.org/blog/2025/05/19/perforce-eula/) - 2025/05/19 _Vox Pupuli Blog_.
     - [Our Plans for Open Source Puppet in 2025](https://www.puppet.com/blog/open-source-puppet-updates-2025) - 2024/11/07 _Puppet Blog_.
     - [Puppet\'s Open Source Community Plans to Fork the Program](https://thenewstack.io/puppets-open-source-community-plans-to-fork-the-program/) - 2024/12/20 _The New Stack_.
     - [First release, hot off the presses!](https://voxpupuli.org/blog/2025/01/21/openvox-release/) - 2025/01/21 _Vox Pupuli Blog_.
-- [OpenVox Automation Framework](https://voxpupuli.org/openvox/) - A soft fork aiming for downstream compatibility with Puppet and codebase modernization.
 
 ## IDE tools
 
@@ -55,8 +76,8 @@ This project is not representing any of these companies/trademark owners, nor is
 - r10k
     - [Fattening the workflow, part 2: r10k - _Puppeteers blog_](https://www.puppeteers.net/blog/fattening-the-workflow-part-2-r10k/) - Quickstart on r10k.
     - [Managing code with r10k - _Puppet Enterprise docs_](https://www.puppet.com/docs/pe/latest/r10k) - PE docs, but r10k can be used with Open Source Puppet.
-- [Vox Pupuli](https://voxpupuli.org/) - Open Source community for Puppet modules, tools and docs authors.
-    - [Plugins list](https://voxpupuli.org/plugins/) - Plugins, tools and resources for Puppet, practically an awesome list.
+- [Vox Pupuli](https://voxpupuli.org/) - Open Source community for OpenVox modules, tools and docs authors.
+    - [Plugins list](https://voxpupuli.org/plugins/) - Plugins, tools and resources for OpenVox, practically an awesome list.
 
 ## Modules
 
@@ -81,11 +102,11 @@ This project is not representing any of these companies/trademark owners, nor is
 - [ModuleSync](https://github.com/voxpupuli/modulesync) - Ruby gem to synchronize meta-files (Gemfile, .gitignore etc) between Puppet modules of an organization.
 - [Pdksync](https://github.com/puppetlabs/pdksync) - Tool synchronize settings between multiple Puppet modules through PDK.
 - [puppet-blacksmith](https://github.com/voxpupuli/puppet-blacksmith) - Ruby gem with Rake tasks to manage a module on the Puppet Forge.
-- [r10k](https://github.com/puppetlabs/r10k) - Tool to manage git/SVN-based environments and modules defined in a [Puppetfile](https://github.com/puppetlabs/r10k/blob/main/doc/puppetfile.mkd), but [without dependency resolving](https://github.com/puppetlabs/r10k/issues/1031).
+- [r10k](https://github.com/puppetlabs/r10k) - Tool to manage Git/SVN-based environments and modules defined in a [Puppetfile](https://github.com/puppetlabs/r10k/blob/main/doc/puppetfile.mkd), but [without dependency resolving](https://github.com/puppetlabs/r10k/issues/1031).
    - [puppet-r10k](https://github.com/voxpupuli/puppet-r10k) - Puppet module to manage r10k.
    - [ra10ke](https://github.com/voxpupuli/ra10ke) - Rake tasks for r10k and Puppetfiles.
 
-## Puppet Tools
+## Tools
 
 - [Beaker](https://github.com/voxpupuli/beaker) - Tool to run acceptance acceptance tests using VMs.
    - [beaker-hiera](https://github.com/voxpupuli/beaker-hiera) - Allows to use Hiera data in Beaker tests.
@@ -95,8 +116,6 @@ This project is not representing any of these companies/trademark owners, nor is
    - [hiera-eyaml-gpg](https://github.com/voxpupuli/hiera-eyaml-gpg) - Allows to use GPG encryption with hiera-eyaml.
 - [Puppetboard](https://github.com/voxpupuli/puppetboard) - Web interface for PuppetDB that aims to be the equivalent of [Puppet Enterprise console](https://www.puppet.com/docs/pe/latest/console_accessing.html) for Open Source Puppet.
    - [puppet-puppetboard](https://github.com/voxpupuli/puppet-puppetboard) - Puppet module to install Puppetboard.
-- [Puppet Bolt](https://www.puppet.com/docs/bolt/latest/bolt.html) - Agent-less orchestration tool, to run tasks/scripts/commands on remote nodes through SSH or WinRM.
-   - [puppet-bolt](https://github.com/voxpupuli/puppet-bolt) - Puppet module to install/manage Bolt.
 - [Puppet Catalog Diff](https://github.com/voxpupuli/puppet-catalog_diff) - Tool to compare Puppet catalogs.
 - [Puppet Summary](https://github.com/skx/puppet-summary) - Web interface written in Go.
    - [puppet-puppet_summary](https://github.com/voxpupuli/puppet-puppet_summary) - Puppet module to install/manage Puppet Summary.
