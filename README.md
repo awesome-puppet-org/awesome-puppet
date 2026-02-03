@@ -14,6 +14,9 @@ This project is not representing any of these companies/trademark owners, nor is
 ## Contents <!-- omit in toc -->
 - [Books](#books)
 - [Distributions](#distributions)
+  - [Commercial](#commercial)
+  - [Community](#community)
+  - [News](#news)
 - [IDE tools](#ide-tools)
 - [Learning](#learning)
 - [Modules](#modules)
@@ -21,6 +24,7 @@ This project is not representing any of these companies/trademark owners, nor is
   - [Modules Management](#modules-management)
 - [Tools](#tools)
   - [Linters, Testers, Validators](#linters-testers-validators)
+  - [Web Interfaces](#web-interfaces)
 
 ## Books
 
@@ -48,11 +52,10 @@ This project is not representing any of these companies/trademark owners, nor is
 
 ### News
 
-- News
-    - [The Perforce EULA and impact on Vox Pupuli](https://voxpupuli.org/blog/2025/05/19/perforce-eula/) - 2025/05/19 _Vox Pupuli Blog_.
-    - [Our Plans for Open Source Puppet in 2025](https://www.puppet.com/blog/open-source-puppet-updates-2025) - 2024/11/07 _Puppet Blog_.
-    - [Puppet\'s Open Source Community Plans to Fork the Program](https://thenewstack.io/puppets-open-source-community-plans-to-fork-the-program/) - 2024/12/20 _The New Stack_.
-    - [First release, hot off the presses!](https://voxpupuli.org/blog/2025/01/21/openvox-release/) - 2025/01/21 _Vox Pupuli Blog_.
+- [Our Plans for Open Source Puppet in 2025](https://www.puppet.com/blog/open-source-puppet-updates-2025) - 2024/11/07 _Puppet Blog_.
+- [Puppet\'s Open Source Community Plans to Fork the Program](https://thenewstack.io/puppets-open-source-community-plans-to-fork-the-program/) - 2024/12/20 _The New Stack_.
+- [First release, hot off the presses!](https://voxpupuli.org/blog/2025/01/21/openvox-release/) - 2025/01/21 _Vox Pupuli Blog_.
+- [The Perforce EULA and impact on Vox Pupuli](https://voxpupuli.org/blog/2025/05/19/perforce-eula/) - 2025/05/19 _Vox Pupuli Blog_.
 
 ## IDE tools
 
@@ -115,7 +118,14 @@ This project is not representing any of these companies/trademark owners, nor is
 - [Puppet Catalog Diff](https://github.com/voxpupuli/puppet-catalog_diff) - Tool to compare Puppet catalogs.
 - [pypuppetdb](https://github.com/voxpupuli/pypuppetdb) - Python library to interact with the PuppetDB API.
 
-#### Web Interfaces
+### Linters, Testers, Validators
+
+- [onceover](https://github.com/voxpupuli/onceover) - Run tests against a Puppet control repository (for example used with r10k).
+- [puppet-syntax](https://github.com/voxpupuli/puppet-syntax) - Syntax checks for manifests, templates and Hiera YAML.
+- [puppet-lint](https://github.com/puppetlabs/puppet-lint) - Test code against the Puppet style guide.
+- [rspec-puppet](https://github.com/puppetlabs/rspec-puppet) - RSpec tests for Puppet manifests.
+
+### Web Interfaces
 
 - [Hiera Data Manager](https://github.com/betadots/hdm) - Web interface to visualize/search Hiera data.
    - [puppet-hdm](https://github.com/voxpupuli/puppet-hdm) - Puppet module to install/manage Hiera Data Manager.
@@ -124,13 +134,6 @@ This project is not representing any of these companies/trademark owners, nor is
 - [Pabawi](https://github.com/example42/pabawi) - Puppet/OpenVox/Bolt/PuppetDB/Hiera web frontend. 
 - [Puppetboard](https://github.com/voxpupuli/puppetboard) - Web interface for OpenVoxDB that aims to be the equivalent of [Puppet Enterprise console](https://www.puppet.com/docs/pe/latest/console_accessing.html), made in Python.
    - [puppet-puppetboard](https://github.com/voxpupuli/puppet-puppetboard) - Module to install Puppetboard.
-
-### Linters, Testers, Validators
-
-- [onceover](https://github.com/voxpupuli/onceover) - Run tests against a Puppet control repository (for example used with r10k).
-- [puppet-syntax](https://github.com/voxpupuli/puppet-syntax) - Syntax checks for manifests, templates and Hiera YAML.
-- [puppet-lint](https://github.com/puppetlabs/puppet-lint) - Test code against the Puppet style guide.
-- [rspec-puppet](https://github.com/puppetlabs/rspec-puppet) - RSpec tests for Puppet manifests.
 
 <!-- omit in toc -->
 ## Contributing
