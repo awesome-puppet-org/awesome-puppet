@@ -80,7 +80,9 @@ This project is not representing any of these companies/trademark owners, nor is
     - [Fattening the workflow, part 2: r10k - _Puppeteers blog_](https://www.puppeteers.net/blog/fattening-the-workflow-part-2-r10k/) - Quickstart on r10k.
     - [Managing code with r10k - _Puppet Enterprise docs_](https://www.puppet.com/docs/pe/latest/r10k) - PE docs, but r10k can be used with Open Source Puppet.
 - [Vox Pupuli](https://voxpupuli.org/) - Open Source community for OpenVox modules, tools and docs authors.
+    - [How to run the Vox Pupuli test suite](https://voxpupuli.org/docs/how_to_run_tests/) - How to run tests when developing on VoxPupuli modules.
     - [Plugins list](https://voxpupuli.org/plugins/) - Plugins, tools and resources for OpenVox, practically an awesome list.
+    - [Reviewing a module pull request](https://voxpupuli.org/docs/reviewing_pr/) - A guide for reviewing pull requests and a collection of best practices.
 
 ## Modules
 
