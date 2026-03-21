@@ -35,7 +35,7 @@ This project is not representing any of these companies/trademark owners, nor is
 
 ### Commercial
 
-- [Puppet](https://www.puppet.com) - Automation tools framework previously Open Core, now EULA-only.
+- [Puppet](https://www.puppet.com) - Automation tools framework previously Open Source, now EULA-only (as Puppet Core).
     - [Puppet Agent](https://help.puppet.com/core/8/Content/PuppetCore/Markdown/agent.htm) - Agent to be installed on the managed nodes.
     - [Puppet Bolt](https://help.puppet.com/bolt/current/topics/bolt.htm) - Agent-less orchestration tool, to run tasks/scripts/commands on remote nodes through SSH or WinRM.
     - [PuppetDB](https://help.puppet.com/core/8/Content/PuppetCore/puppetdb_overview.htm) - Database for agent run reports storage and analysis.
